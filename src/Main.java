@@ -23,7 +23,7 @@ public class Main {
         System.out.println(house);
         float plane = 2.786f;
         System.out.println(plane);
-        boolean liar = 20 <= 10;
+        boolean liar = false;
         System.out.println(liar);
         int bag = 569;
         System.out.println(bag);
@@ -83,9 +83,11 @@ public class Main {
         // Задача 7
         System.out.println("Задача 7");
         short totalLostWeight = 7 * 1000;
-        System.out.println("Если спортсмен будет каждый день терять по 250 грамм веса, то на похудение понадобится " + totalLostWeight / 250 + " дней.");
-        System.out.println("Если спортсмен будет каждый день терять по 500 грамм веса, то на похудение понадобится " + totalLostWeight / 500 + " дней.");
-        int averageNumberOfDays = (totalLostWeight / 250 + totalLostWeight / 500) / 2;
+        short lostWeightPerDay1 = 250;
+        short lostWeightPerDay2 = 500;
+        System.out.println("Если спортсмен будет каждый день терять по " + lostWeightPerDay1 + " грамм веса, то на похудение понадобится " + totalLostWeight / lostWeightPerDay1 + " дней.");
+        System.out.println("Если спортсмен будет каждый день терять по " + lostWeightPerDay2 + " грамм веса, то на похудение понадобится " + totalLostWeight / lostWeightPerDay2 + " дней.");
+        int averageNumberOfDays = (totalLostWeight / lostWeightPerDay1 + totalLostWeight / lostWeightPerDay2) / 2;
         System.out.println("В среднем для похудения понадобится " + averageNumberOfDays + " день.");
 
         // Задача 8
